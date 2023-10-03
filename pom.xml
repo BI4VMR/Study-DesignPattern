@@ -15,9 +15,7 @@
     </modules>
 
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-        <!-- 当前工程的版本号 -->
+        <!-- 工程的版本号 -->
         <revision>0.0.1</revision>
 
         <!-- 版本号: Kotlin标准库-->

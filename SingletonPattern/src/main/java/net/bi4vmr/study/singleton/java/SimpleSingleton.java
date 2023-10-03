@@ -1,4 +1,4 @@
-package net.bi4vmr.study.singleton;
+package net.bi4vmr.study.singleton.java;
 
 /**
  * Name        : net.bi4vmr.study.singleton.kt.SimpleSingleton

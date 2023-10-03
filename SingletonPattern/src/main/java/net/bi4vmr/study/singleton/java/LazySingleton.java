@@ -1,4 +1,4 @@
-package net.bi4vmr.study.singleton;
+package net.bi4vmr.study.singleton.java;
 
 import java.util.UUID;
 
@@ -11,27 +11,27 @@ import java.util.UUID;
  * <p>
  * Date        : 2023-09-29 21:45
  * <p>
- * Description : 单例模式 - 懒汉式（延迟加载、线程安全、"getInstance"方法效率不高）。
+ * Description : 单例模式 - 懒汉式（延迟加载、非线程安全）。
  */
-public class LazySyncSingleton {
+public class LazySingleton {
 
     // 当前类的实例变量
-    private static LazySyncSingleton instance = null;
+    private static LazySingleton instance = null;
 
     // 对象标识符，构造对象时赋值，用于区分不同的对象。
     private final String id = UUID.randomUUID().toString();
 
     // 将构造函数设置为私有，禁止外部直接创建对象。
-    private LazySyncSingleton(int arg1) {
+    private LazySingleton(int arg1) {
         // 初始化操作...
         System.out.println("构造对象，读取初始化参数：" + arg1);
     }
 
-    // 新增"synchronized"关键字，每次只允许一个线程进行操作。
-    public static synchronized LazySyncSingleton getInstance(int arg1) {
+    // 对外公开的方法，供外界获取当前类的实例。
+    public static LazySingleton getInstance(int arg1) {
         // 当前对象为空时，创建实例。
         if (instance == null) {
-            instance = new LazySyncSingleton(arg1);
+            instance = new LazySingleton(arg1);
         }
         return instance;
     }
