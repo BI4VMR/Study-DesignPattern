@@ -11,8 +11,4 @@
     </parent>
 
     <artifactId>SingletonPattern</artifactId>
-
-    <build>
-        <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
-    </build>
 </project>

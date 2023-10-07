@@ -1,7 +1,7 @@
 package net.bi4vmr.study.singleton.java;
 
 /**
- * Name        : SingletonDemo
+ * Name        : TestSingleton
  * <p>
  * Author      : BI4VMR
  * <p>
@@ -9,9 +9,9 @@ package net.bi4vmr.study.singleton.java;
  * <p>
  * Date        : 2023-09-29 21:44
  * <p>
- * Description : 单例模式测试类。
+ * Description : 测试类 - 单例模式。
  */
-public class SingletonDemo {
+public class TestSingleton {
 
     public static void main(String[] args) {
         example05();

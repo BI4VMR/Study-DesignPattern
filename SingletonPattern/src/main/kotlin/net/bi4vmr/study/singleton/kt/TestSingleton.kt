@@ -3,7 +3,7 @@ package net.bi4vmr.study.singleton.kt
 import kotlin.concurrent.thread
 
 /**
- * Name        : SingletonDemo
+ * Name        : TestSingleton
  *
  * Author      : BI4VMR
  *
@@ -11,7 +11,7 @@ import kotlin.concurrent.thread
  *
  * Date        : 2023-10-01 13:38
  *
- * Description : 单例模式测试类。
+ * Description : 测试类 - 单例模式。
  */
 
 fun main() {
