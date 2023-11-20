@@ -13,13 +13,14 @@ import java.util.*
  *
  * Description : 单例模式 - 双重校验锁式（包含初始化参数）。
  */
-class LazyDCLSingleton2 private constructor(arg1: Int) {
+class LazyDCLSingleton2 private constructor(arg1: Any) {
 
     companion object {
+        @Volatile
         private var instance: LazyDCLSingleton2? = null
 
         @JvmStatic
-        fun getInstance(arg1: Int): LazyDCLSingleton2 {
+        fun getInstance(arg1: Any): LazyDCLSingleton2 {
             if (instance == null) {
                 synchronized(this) {
                     if (instance == null) {

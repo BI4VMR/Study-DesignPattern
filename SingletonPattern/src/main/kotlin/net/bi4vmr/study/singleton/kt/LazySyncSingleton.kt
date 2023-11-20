@@ -13,7 +13,7 @@ import java.util.*
  *
  * Description : 单例模式 - 懒汉同步式。
  */
-class LazySyncSingleton private constructor(arg1: Int) {
+class LazySyncSingleton private constructor(arg1: Any) {
 
     /*
      * 伴生对象
@@ -27,7 +27,7 @@ class LazySyncSingleton private constructor(arg1: Int) {
         // 对外公开的方法，供外界获取当前类的实例。
         @Synchronized
         @JvmStatic
-        fun getInstance(arg1: Int): LazySyncSingleton {
+        fun getInstance(arg1: Any): LazySyncSingleton {
             if (instance == null) {
                 instance = LazySyncSingleton(arg1)
             }

@@ -13,7 +13,7 @@ import java.util.*
  *
  * Description : 单例模式 - 懒汉式。
  */
-class LazySingleton private constructor(arg1: Int) {
+class LazySingleton private constructor(arg1: Any) {
 
     /*
      * 伴生对象
@@ -26,7 +26,7 @@ class LazySingleton private constructor(arg1: Int) {
 
         // 对外公开的方法，供外界获取当前类的实例。
         @JvmStatic
-        fun getInstance(arg1: Int): LazySingleton {
+        fun getInstance(arg1: Any): LazySingleton {
             if (instance == null) {
                 instance = LazySingleton(arg1)
             }
